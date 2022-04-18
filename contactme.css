@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* for background image */
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/contactme2.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size:  100vw; */
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+  }
+
+  .heading{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;      
+  }
+
+  /* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:  #f594a4be;
+  font-size: 150%;
+
+  /* width: 100%; */
+  /* display: flex;
+  justify-content: center; */
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+  .heading{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;      
+  }
+}   
+
+.contactme{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify ;
+    margin-top: 20px;
+}
+.contactmetext{
+    font-size: 1.5vw;
+    width: 500px ;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center ;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    align-content: space-between;
+}
+/* .contactmetext ul{
+    list-style: none;
+} */
+#icons {
+    object-fit: contain;
+    height: 6rem;
+    width: 6rem;
+}
+#social {
+    width: auto;
+}
+
+@media screen and (max-width: 750px) {
+    .contactmetext{
+        flex-direction: column;
+    }
+}
